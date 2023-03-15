@@ -1,3 +1,5 @@
+#ifndef KEYCONSTANT_H
+#define KEYCONSTANT_H
 
 #include <map>
 #include <string>
@@ -210,3 +212,4 @@ std::map<int,KeyPair> Key::KEYS = {
     {0x06, {"[VK_XBUTTON2]", "[X Button 2 **]"}},
 };
 
+#endif
