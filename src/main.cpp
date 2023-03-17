@@ -1,10 +1,10 @@
 #include <iostream>
-#include "headers/KeyConstant.h"
-
+#include <windows.h>
 int main(){
-
-Key obj;
-
-std::cout<<obj.KEYS.size()<<std::endl;
-
+	MSG msg;
+	while(GetMessage(&msg,NULL,0,0)){
+	   TranslateMessage(&msg);
+	   DispatchMessage(&msg);
+	}
+	return 0;
 }
